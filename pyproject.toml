@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = []
+
+[project]
+name = "PipecatAgentDemo"
+version = "0.1.0"
+description = "Project to explore pipecat framework and to better understand the concepts or buildind an AI Voice Agent."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+	"pipecat-ai>=0.0.100",
+	#aiortc 
+	"fastapi>=0.133.0", 
+	"uvicorn>=0.41.0",
+	"deepgram-sdk>=6.0.0",
+	"elevenlabs>=2.38.1",
+	"openai>=2.26.0"
+]
